@@ -1,0 +1,116 @@
+aiofiles==0.5.0
+aioredis==1.3.1
+aiosmtplib==1.1.4
+alembic @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/5b/1c/24/4365f6fd80ded2177cf7efd7770a8167d52430b2112efebf4a1d640145/alembic-1.7.7-py3-none-any.whl
+altgraph==0.17
+aniso8601==7.0.0
+anyio @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/3c/2e/0f/4a21a63af045159f769fb9feb820775a682870a69ff8b9b1f3f66304e2/anyio-3.5.0-py3-none-any.whl
+appdirs==1.4.4
+asgiref @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/97/19/96/6fe4e79be71b46c24f8ad1d77086edd058efc60976b764fcac45c2e160/asgiref-3.5.0-py3-none-any.whl
+async-exit-stack==1.0.1
+async-generator==1.10
+async-timeout==3.0.1
+asyncpg @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/a2/55/ae/b9dd8e6ae9033cc4dcbb3849d2c0ad49f7640edd988846e942c6893e4e/asyncpg-0.25.0-cp39-cp39-win_amd64.whl
+atomicwrites @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/b7/99/9c/c8ddc18c8225c740fc2ae6d503da3f93d5dddaf04afac3da460afacbc6/atomicwrites-1.4.0-py2.py3-none-any.whl
+attrs @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/5b/25/94/5d165cd3190cb7dfdc98de86c28e8131fc6e19d83a504412664abffec0/attrs-21.4.0-py2.py3-none-any.whl
+auto-py-to-exe==2.9.0
+autoflake==1.4
+bcrypt==3.2.0
+black @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/24/fc/6b/230b21844ab2585833fa572d6ae210dabd36b7eab47f13ee68aa4227cc/black-21.12b0-py3-none-any.whl
+blinker==1.4
+bottle==0.12.19
+bottle-websocket==0.2.9
+certifi @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/71/9a/ba/a51b34ce9aacf9ac5dbb90d7c7335877522ee188189d9a521ee1a9c411/certifi-2021.10.8-py2.py3-none-any.whl
+cffi @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/ec/6b/05/494ef9f78f818b7bc9c9803456842398cbfc2380bbba02e47f77766b15/cffi-1.15.0-cp39-cp39-win_amd64.whl
+charset-normalizer==2.0.12
+click @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/fb/bd/e7/ac3267cdaa4ac3cfcde3b3d14d7d2b92aaf38d8a34437d49e873b8289e/click-8.0.4-py3-none-any.whl
+colorama==0.4.4
+coverage @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/cd/9f/44/f49b552fca4542cf76e2e2ceafd57b15823c391b19cda5cf0766389579/coverage-6.3.2-cp39-cp39-win_amd64.whl
+cryptography==3.3.2
+distlib==0.3.1
+dnspython @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/83/1d/90/05a24fb4711e8c48b81604d2b14acca2e097b7f788587b6130cb528d1d/dnspython-2.2.1-py3-none-any.whl
+ecdsa==0.14.1
+Eel==0.12.4
+email-validator @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/b6/a8/2d/1b373b6100af9c6bf9446ab71e08e44f8d554166e2e4fce2c04606eea0/email_validator-1.1.3-py2.py3-none-any.whl
+fakeredis==1.4.5
+fastapi @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/91/86/b6/535ceaf67d576c371b9484e58b80d36442c02546cafc3d4618538e59c4/fastapi-0.75.0-py3-none-any.whl
+fastapi-mail==0.3.5.0
+fastapi-users @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/1d/46/e8/54de07ea5908ce4ee92d7975d8f1bd354e0d8cb31254e94fc28b70fb21/fastapi_users-9.2.6-py3-none-any.whl
+fastapi-users-db-sqlalchemy @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/e5/ab/4f/dde929a70efa24f1214bd0af36d37ef46aede1028e3d0ec785e37f4535/fastapi_users_db_sqlalchemy-2.0.4-py3-none-any.whl
+filelock==3.0.12
+flake8 @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/99/5c/01/a49c075bc6dead5c60588c1cd1701f63d614740792c9a09fb133b41d58/flake8-4.0.1-py2.py3-none-any.whl
+future==0.18.2
+gevent==21.1.2
+gevent-websocket==0.10.1
+graphene==2.1.9
+graphql-core==2.3.2
+graphql-relay==2.0.1
+greenlet @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/96/8d/f7/671708c8a74421219834f29d18b91ea14778bac2a0eebb6a4ad52f068a/greenlet-1.1.2-cp39-cp39-win_amd64.whl
+h11==0.12.0
+hiredis==1.1.0
+httpcore @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/f2/cc/60/91709a717f14b1f234ac901d44af0c11ca89aa1fc8b57d02046f0c3834/httpcore-0.14.7-py3-none-any.whl
+httptools==0.2.0
+httpx @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/81/59/40/552fa1cd0e0a02964273dbfcb8ce7e9e8aefceee05b648753655962a69/httpx-0.21.3-py3-none-any.whl
+idna @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/d5/04/80/9c17fd3240a37d12ff2ef042b0306aeb1abd2d8b95f150fd60be938352/idna-3.3-py3-none-any.whl
+iniconfig @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/fa/b0/c6/10cfac68c9e6de9d2a1678366ca89fd9292b362c1760dbe758e41691cb/iniconfig-1.1.1-py2.py3-none-any.whl
+isort @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/9d/c0/d5/617ee6ec6b065b9a3c8c3f7a0b06604f1a47738904535923554e135a7d/isort-5.10.1-py3-none-any.whl
+itsdangerous==1.1.0
+Jinja2==2.11.3
+makefun @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/d9/91/7a/5252e35b42601c078d6e8cd2ee22da3b785969a311a66eb73e0cd93dd8/makefun-1.13.1-py2.py3-none-any.whl
+Mako @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/42/ae/2b/357af34222b45155befa2156a8a67ad9109e854e329f3f10038409fe7f/Mako-1.2.0-py3-none-any.whl
+MarkupSafe @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/0d/39/c5/934bea1d1da42f89497a3cf6083991ea9da3f6c323d19dbb31655ae920/MarkupSafe-2.1.1-cp39-cp39-win_amd64.whl
+mccabe @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/96/5e/5f/21ae5296697ca7f94de4da6e21d4936d74029c352a35202e4c339a4253/mccabe-0.6.1-py2.py3-none-any.whl
+mypy-extensions @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/92/45/bf/1807ce854ff668d92602207a37bfa9316def2a3f257bd03c4c5be4bc9b/mypy_extensions-0.4.3-py2.py3-none-any.whl
+mysqlclient==2.0.3
+orjson==3.6.7
+packaging @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/47/3f/ce/b240169f7d8bef1ff24a0269b709721ce86543c2ec25e0b6adb2c2d7ac/packaging-21.3-py3-none-any.whl
+passlib==1.7.4
+pathspec @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/0a/67/21/620031f7f2938bad77b057a68a4c2a334542a7402a3214ed48690caf8c/pathspec-0.9.0-py2.py3-none-any.whl
+pefile==2021.5.24
+platformdirs @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/93/8d/ca/426085089def3badd9c0e5c7b483c7664c4c61f3297f04e430ef747c7a/platformdirs-2.5.1-py3-none-any.whl
+pluggy @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/81/78/ca/13f743a3628faf5a0b7f021efb45f2193acba3a13663d498f6b34bf02e/pluggy-1.0.0-py2.py3-none-any.whl
+promise==2.3
+protobuf==3.14.0
+psycopg2==2.8.6
+py @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/b3/5c/47/ba5a596e01a2b61fa2daa6a438252483ad8c04e6c99e5dc22eaf8a489a/py-1.11.0-py2.py3-none-any.whl
+pyasn1==0.4.8
+pycodestyle @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/80/25/e5/ced4effd2487693e96521aebb353ce58ad0d81417f71c480419ea8f44a/pycodestyle-2.8.0-py2.py3-none-any.whl
+pycparser @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/fb/06/dd/b5671b47dd0597663bc05d60d324bb315a8cef56f3179b8f9067f88e50/pycparser-2.21-py2.py3-none-any.whl
+pydantic @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/04/f2/75/ecdd410245daccf980abc21513c35ea22105b68f49bd6bbda0cd571888/pydantic-1.9.0-cp39-cp39-win_amd64.whl
+pyflakes @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/ad/8e/6d/e46117c96aa3e955c40ed2f0d35b29910b0e557e327fbbba17fd8c390c/pyflakes-2.4.0-py2.py3-none-any.whl
+pyinstaller==4.3
+pyinstaller-hooks-contrib==2021.1
+PyJWT @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/6d/a2/4c/7218503a28c8d672d4374161e6e47a71ffc11c0046a535d2ff709af4ca/PyJWT-2.3.0-py3-none-any.whl
+pyparsing @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/8e/18/e1/a47fbcc66e38a452c34d2a444d74d8a03fd4aa7c0b6e27c0bee1582107/pyparsing-3.0.7-py3-none-any.whl
+pytest @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/28/be/f1/ce8fa22c989106fc7c1ee7fa31d55d7f31aee1c58c63b2a43670601b79/pytest-6.2.5-py3-none-any.whl
+pytest-asyncio @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/2f/3a/7e/4d4b12b8cefb409f4b157f18ef0c57b04cb97b004d9ee23a29fe4a440f/pytest_asyncio-0.16.0-py3-none-any.whl
+python-dateutil==2.8.1
+python-decouple==3.4
+python-dotenv @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/5b/d0/1b/25c6bbc2c828652b337720dc85e45350ab608aae80057b49ce5c6a0c7b/python_dotenv-0.19.2-py2.py3-none-any.whl
+python-editor==1.0.4
+python-jose==3.2.0
+python-multipart==0.0.5
+pywin32-ctypes==0.2.0
+PyYAML==5.4.1
+redis==3.5.3
+requests==2.27.1
+rfc3986 @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/d8/81/cb/edf693777f4e4262771048d0f39711ad08a38d6a1c049c0426f5783791/rfc3986-1.5.0-py2.py3-none-any.whl
+rsa==4.7.1
+Rx==1.6.1
+six @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/08/9f/47/c16ae03035fc69eaf100ea39657a49baaeef714e25a52575710c34cd48/six-1.16.0-py2.py3-none-any.whl
+sniffio==1.2.0
+sortedcontainers==2.3.0
+SQLAlchemy @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/35/01/73/f9b2823b14591eb6cbd15effe1ad425e8c6994ac6d92a0ac100833d4a4/SQLAlchemy-1.4.32-cp39-cp39-win_amd64.whl
+sqlalchemy2-stubs @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/e5/e8/29/776923935e4f15cb3cffd88f1447684b77f9a3a4efdd39b1166010679a/sqlalchemy2_stubs-0.0.2a20-py3-none-any.whl
+starlette @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/7a/39/a4/08cf694200ec5a925ad222b8d2ee44f3ad6818e877a8f5bfc20d612123/starlette-0.17.1-py3-none-any.whl
+toml @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/6b/6a/c9/53b19f7870a77d855e8b05ecdc98193944e5d246dafe11bbcad850ecba/toml-0.10.2-py2.py3-none-any.whl
+tomli @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/ac/ac/b1/30c3dea8350b0dd2f05e88ef2753e8f7b7437a2b2a2775ddac38c73480/tomli-1.2.3-py3-none-any.whl
+typing_extensions @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/9b/2e/e0/f2f5524348ab0c59b31fc2526543d60a53583608f35a4574a4978f5358/typing_extensions-4.1.1-py3-none-any.whl
+ujson==4.3.0
+urllib3 @ file:///C:/Users/ASUS/AppData/Local/pypoetry/Cache/artifacts/86/4a/ad/37e91024d94f8218fc54b1fbb58b71888f53c1636daeb28593fa254ed2/urllib3-1.26.9-py2.py3-none-any.whl
+uvicorn==0.15.0
+watchgod==0.6
+websockets==11.0.3
+whichcraft==0.6.1
+zope.event==4.5.0
+zope.interface==5.4.0
