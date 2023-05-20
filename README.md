@@ -1,6 +1,20 @@
 # money-tracker
 tracking my money
 
+## pip installation
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install
+or
+download get-pip.py
+```bash
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+```
+
+install pip
+```bash
+python get-pip.py
+```
+you must install python in youre computer
+
 ## create virtualenv
 ```bash
 python -m venv nama-environment
@@ -24,8 +38,7 @@ source venv/bin/activate
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install
-
+Instal FastAPI
 ```bash
 pip install "fastapi[all]"
 ```
