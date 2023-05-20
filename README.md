@@ -58,3 +58,6 @@ update .env file and create your database
 uvicorn app.main:app --reload
 ```
 database migration will runnning automatically when your run the program
+
+## Api Docs
+open in your browser http://localhost:8000/docs
