@@ -49,6 +49,7 @@ pip install -r requirements.txt
 ```
 
 after instal
+rename .env_example to .env and
 update .env file and create your database
 
 -------------------------
