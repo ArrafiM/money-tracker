@@ -5,7 +5,7 @@ from app.database import models
 from app.database.database import engine
 
 from app.routers import (
-    authRoutes,userRoutes
+    authRoutes,userRoutes,pocketFlowRoutes
     )
 
 models.Base.metadata.create_all(bind=engine)
@@ -23,6 +23,7 @@ app.add_middleware(
 app.include_router(authRoutes.router)
 app.include_router(userRoutes.router)
 app.include_router(userRoutes.router_user)
+app.include_router(pocketFlowRoutes.router_pocket)
 
 
 @app.get("/")

@@ -4,10 +4,9 @@ from sqlalchemy.orm import Session
 
 from app.controller import userControllers
 from app.database import schemas
-from app.database.database import engine
 from app.database.config import get_db
 
-from fastapi import APIRouter, Header, HTTPException, Depends, BackgroundTasks
+from fastapi import APIRouter, HTTPException, Depends
 from app.dependencies import get_token_admin, get_token_header
 
 
@@ -17,7 +16,6 @@ router_user = APIRouter(
     dependencies=[Depends(get_token_header)],
     responses={404: {"description": "Not found"}},
 )
-
 
 router = APIRouter(
     prefix="/users",

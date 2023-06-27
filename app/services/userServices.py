@@ -1,9 +1,10 @@
 from fastapi import HTTPException
 from app.database import models
 
+User = models.User
 
 def get_user_by_id(db, user_id):
-    user = db.query(models.User).filter(models.User.id == user_id).first()
+    user = db.query(User).filter(User.id == user_id).first()
     return user
 
 

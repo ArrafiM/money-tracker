@@ -1,6 +1,6 @@
 from passlib.context import CryptContext
 from app.database import models
-from app.services import mailServices
+from app.services import mailServices, walletUserServices
 from fastapi import HTTPException
 from datetime import datetime, timedelta
 from jose import jwt
@@ -56,6 +56,7 @@ async def user_registration(db, user, background_task):
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
+    await walletUserServices.create_pocket(db,db_user.id)
     # sendmail = await mailServices.send_in_background(background_task, email=user.email, html=html)
     return db_user
 
@@ -72,10 +73,10 @@ def login(db, user):
     if dataUser.code :
         raise HTTPException(status_code=401, detail="Tidak dapat login, tolong periksa email anda")
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    profile = db.query(models.Profile).filter(models.Profile.user_id == dataUser.id).first()
+    # profile = db.query(models.Profile).filter(models.Profile.user_id == dataUser.id).first()
     data = {'id':dataUser.id, 'id_level':dataUser.id_level}
     token = create_access_token(data=data,expires_delta=access_token_expires)
-    return {'message':'Berhasil Login','token':token,'id_level':dataUser.id_level}
+    return {'message':'Berhasil Login','token':token,'id_level':dataUser.id_level, 'user_id':dataUser.id}
 
 
 
