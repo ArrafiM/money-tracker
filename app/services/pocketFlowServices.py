@@ -17,7 +17,8 @@ async def create_pocketFlow(db, data):
         approvedAt = now
     db_pocket = models.PocketFlow(
         user_id=userId, wallet_id=walletId, is_approve=isApprove, 
-        status=status, nominal=data.nominal, approved_at=approvedAt
+        status=status, nominal=data.nominal, approved_at=approvedAt,
+        name=data.name or None, description=data.description or None
     )
     if isApprove:
         await walletUserServices.update_pocketMoney(db, userId, nominal=data.nominal, status=status)
