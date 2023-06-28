@@ -1,4 +1,4 @@
-from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, BigInteger, DateTime
+from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, BigInteger, DateTime, Text
 from sqlalchemy.orm import relationship
 import datetime
 
@@ -62,6 +62,8 @@ class PocketFlow(Base):
     approved_at = Column(DateTime(timezone=True))
     created_at = Column(DateTime(timezone=True), default=datetime.datetime.utcnow)
     updated_at = Column(DateTime(timezone=True), onupdate=datetime.datetime.utcnow)
+    name = Column(String, nullable=True)
+    description = Column(Text, nullable=True)
 
 
 
