@@ -52,7 +52,8 @@ async def user_registration(db, user, background_task):
     if userCek:
         return {'message':"Email already registered"}
     fake_hashed_password = pwd_context.hash(user.password)
-    db_user = models.User(email=user.email, hashed_password=fake_hashed_password, id_level=user.id_level , code=None)
+    db_user = models.User(email=user.email, hashed_password=fake_hashed_password, 
+                            id_level=user.id_level , code=None, name=user.name)
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
