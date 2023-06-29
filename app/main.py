@@ -11,7 +11,7 @@ from app.routers import (
 # models.Base.metadata.create_all(bind=engine)
 # models.Base.metadata.drop_all(bind=engine)
 
-app = FastAPI(title="Accounts API Docs")
+app = FastAPI(title="My Pocket (money-tracker) API Docs")
 
 app.add_middleware(
     CORSMiddleware,

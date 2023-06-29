@@ -1,9 +1,10 @@
 from typing import List, Optional
-
+from datetime import datetime
 from pydantic import BaseModel, EmailStr
 
 class User(BaseModel):
     id: int
+    name: Optional[str]
     email: str
     is_active: bool
     id_level: int
@@ -16,12 +17,14 @@ class User(BaseModel):
 
 
 class UserCreate(BaseModel):
+    name: str
     email: str
     password: str
     id_level: int
 
 class Usersend(BaseModel):
     id: int
+    name: Optional[str]
     email: str
     id_level: str
     hashed_password: str
@@ -56,6 +59,9 @@ class PocketFlow(BaseModel):
     status : str
     wallet_id : int
     nominal : int
+    created_at: Optional[datetime]
+    updated_at: Optional[datetime]
+    approved_at: Optional[datetime]
 
     class Config:
         orm_mode = True
