@@ -28,8 +28,27 @@ async def create_pocketFlow(db, data):
     print(db_pocket)
     return db_pocket
 
-def get_pocketFlow(db):
-    return db.query(models.PocketFlow).all()
+def get_pocketFlow(db,filter):
+    from_date_approved = filter['from_date_approved'] or None
+    to_date_approved = filter['to_date_approved'] or None
+    status = filter['status'] or None
+    is_approved = filter['is_approved'] or None
+    from_date_created = filter['from_date_created'] or None
+    to_date_created = filter['to_date_created'] or None
+    data  = db.query(models.PocketFlow)
+    if status:
+        data = data.filter(models.PocketFlow.status == status)
+    if is_approved in ['true', 'false']:
+        data = data.filter(models.PocketFlow.is_approve == is_approved)
+    if to_date_approved and from_date_approved:
+        from_date_approved_obj = datetime.strptime(from_date_approved, "%Y-%m-%d")
+        to_date_approved_obj = datetime.strptime(to_date_approved, "%Y-%m-%d")
+        data = data.filter(models.PocketFlow.approved_at.between(from_date_approved_obj, to_date_approved_obj))
+    if to_date_created and from_date_created:
+        from_date_created_obj = datetime.strptime(from_date_created, "%Y-%m-%d")
+        to_date_created_obj = datetime.strptime(to_date_created, "%Y-%m-%d")
+        data = data.filter(models.PocketFlow.created_at.between(from_date_created_obj, to_date_created_obj))
+    return data.all()
 
 def user_pocketFlow(db, user_id):
     return db.query(pocketFlow).filter(pocketFlow.user_id == user_id).all()

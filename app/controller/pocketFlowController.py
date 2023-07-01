@@ -5,8 +5,8 @@ def create_pocketFlow(db, data):
     data = pocketFlowServices.create_pocketFlow(db, data)
     return data
 
-def get_pocketFlow(db):
-    data = pocketFlowServices.get_pocketFlow(db)
+def get_pocketFlow(db,filter):
+    data = pocketFlowServices.get_pocketFlow(db,filter)
     return data
 
 def user_pocketFlow(db, user_id):
