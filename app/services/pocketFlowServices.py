@@ -35,7 +35,10 @@ def get_pocketFlow(db,filter):
     is_approved = filter['is_approved'] or None
     from_date_created = filter['from_date_created'] or None
     to_date_created = filter['to_date_created'] or None
+    user_id = filter['user_id'] or None
     data  = db.query(models.PocketFlow)
+    if user_id:
+        data = data.filter(models.PocketFlow.user_id == user_id)
     if status:
         data = data.filter(models.PocketFlow.status == status)
     if is_approved in ['true', 'false']:
