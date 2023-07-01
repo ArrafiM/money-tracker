@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 
 from sqlalchemy.orm import Session
 
@@ -7,7 +7,7 @@ from app.database import schemas
 from app.database.database import engine
 from app.database.config import get_db
 
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter, HTTPException, Depends, Query
 from app.dependencies import get_token_header
 
 
@@ -24,8 +24,16 @@ async def pocket_create(pocket: schemas.PocketFlowCreate, db: Session = Depends(
     return data
 
 @router_pocket.get("/", response_model=List[schemas.PocketFlow])
-def get_pocket(db: Session = Depends(get_db)):
-    data = pocketFlowController.get_pocketFlow(db)
+def get_pocket(status: Optional[str] = Query(None, description="(in|out) atau kosongkan untuk get all"), 
+               from_date_approved :Optional[str] = Query(None, description="(YYYY-MM-DD) atau kosongkan untuk get all"), 
+               to_date_approved : Optional[str] = Query(None, description="(YYYY-MM-DD) atau kosongkan untuk get all"),
+               from_date_created :Optional[str] = Query(None, description="(YYYY-MM-DD) atau kosongkan untuk get all"), 
+               to_date_created : Optional[str] = Query(None, description="(YYYY-MM-DD) atau kosongkan untuk get all"),
+               is_approved: Optional[str] = Query(None, description="(true|false) atau kosongkan untuk get all"),
+               db: Session = Depends(get_db)):
+    filter = {'from_date_approved':from_date_approved,'to_date_approved':to_date_approved,'status':status,'is_approved':is_approved,
+              'from_date_created':from_date_created,'to_date_created':to_date_created}
+    data = pocketFlowController.get_pocketFlow(db,filter)
     return data
 
 @router_pocket.get("/{user_id}", response_model=List[schemas.PocketFlow])
