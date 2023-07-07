@@ -31,9 +31,10 @@ def get_pocket(status: Optional[str] = Query(None, description="(in|out) atau ko
                to_date_created : Optional[str] = Query(None, description="(YYYY-MM-DD) atau kosongkan untuk get all"),
                is_approved: Optional[str] = Query(None, description="(true|false) atau kosongkan untuk get all"),
                user_id: Optional[int] = Query(None, description="(id for user) atau kosongkan untuk get all"),
+               limit: Optional[int] = Query(None, description="(id for user) atau kosongkan untuk get all"),
                db: Session = Depends(get_db)):
     filter = {'from_date_approved':from_date_approved,'to_date_approved':to_date_approved,'status':status,'is_approved':is_approved,
-              'from_date_created':from_date_created,'to_date_created':to_date_created, 'user_id':user_id}
+              'from_date_created':from_date_created,'to_date_created':to_date_created, 'user_id':user_id,'limit':limit}
     data = pocketFlowController.get_pocketFlow(db,filter)
     return data
 
