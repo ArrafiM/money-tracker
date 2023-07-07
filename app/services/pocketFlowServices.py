@@ -2,6 +2,7 @@ from app.database import models
 from app.services import walletUserServices
 from fastapi import HTTPException
 from datetime import datetime
+from sqlalchemy import desc, asc
 
 pocketFlow = models.PocketFlow
 now = datetime.now()
@@ -36,7 +37,8 @@ def get_pocketFlow(db,filter):
     from_date_created = filter['from_date_created'] or None
     to_date_created = filter['to_date_created'] or None
     user_id = filter['user_id'] or None
-    data  = db.query(models.PocketFlow)
+    limit = filter['limit'] or None
+    data  = db.query(models.PocketFlow).order_by(desc(models.PocketFlow.created_at))
     if user_id:
         data = data.filter(models.PocketFlow.user_id == user_id)
     if status:
@@ -51,6 +53,8 @@ def get_pocketFlow(db,filter):
         from_date_created_obj = datetime.strptime(from_date_created, "%Y-%m-%d")
         to_date_created_obj = datetime.strptime(to_date_created, "%Y-%m-%d")
         data = data.filter(models.PocketFlow.created_at.between(from_date_created_obj, to_date_created_obj))
+    if limit:
+        data = data.limit(limit)
     return data.all()
 
 def user_pocketFlow(db, user_id):
